@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+body{
+    padding: 6vh 4vw;
+}
+
+.mainimg {
+    grid-area: mainimg;
+}
+
+.title {
+    grid-area: title;
+}
+
+.genres {
+    grid-area: genres;
+}
+
+.rating {
+    grid-area: rating;
+}
+
+.description {
+    grid-area: description;
+}
+
+.episodes {
+    grid-area: episodes;
+}
+
+.episodedeimg {
+    grid-area: epimg;
+}
+
+.episodedescription {
+    grid-area: epde;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: start;
+    grid-template-areas: 'mainimg title title' 'mainimg genres genres' 'mainimg rating rating' 'mainimg description description' 'episodes episodes episodes' 'epimg epimg epimg' 'epde epde epde';
+}
