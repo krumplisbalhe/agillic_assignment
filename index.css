@@ -1,9 +1,21 @@
 * {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    padding: 6vh 4vw;
+h2 {
+    font-size: 1.5em;
+}
+
+h3,
+p {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+p{
+    text-align: justify;
+    padding-right: 8vw;
 }
 
 .mainimg {
@@ -30,18 +42,21 @@ body{
     grid-area: episodes;
 }
 
-.episodedeimg {
-    grid-area: epimg;
-}
-
-.episodedescription {
-    grid-area: epde;
-}
-
 .main {
+    padding: 10vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    align-items: start;
-    grid-template-areas: 'mainimg title title' 'mainimg genres genres' 'mainimg rating rating' 'mainimg description description' 'episodes episodes episodes' 'epimg epimg epimg' 'epde epde epde';
+    grid-row-gap: 20px;
+    grid-column-gap: 5px;
+    grid-template-areas: 'mainimg title title' 'mainimg genres genres' 'mainimg rating rating' 'mainimg description description' 'episodes episodes episodes';
+}
+
+.container {
+    text-align: left;
+}
+
+#application-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
